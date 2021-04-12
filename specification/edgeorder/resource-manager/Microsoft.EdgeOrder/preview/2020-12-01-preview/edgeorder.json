@@ -2,7 +2,7 @@
   "swagger": "2.0",
   "info": {
     "version": "2020-12-01-preview",
-    "title": "Edge Ordering Service"
+    "title": "Edge Ordering Service-Customer"
   },
   "host": "management.azure.com",
   "schemes": [
@@ -30,7 +30,7 @@
         ],
         "parameters": [
           {
-            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/ApiVersionParameter"
+            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/apiVersionParameter"
           }
         ],
         "responses": {
@@ -72,10 +72,10 @@
         ],
         "parameters": [
           {
-            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/SubscriptionIdParameter"
+            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/subscriptionIdParameter"
           },
           {
-            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/ApiVersionParameter"
+            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/apiVersionParameter"
           },
           {
             "name": "$filter",
@@ -131,10 +131,10 @@
         ],
         "parameters": [
           {
-            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/SubscriptionIdParameter"
+            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/subscriptionIdParameter"
           },
           {
-            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/ApiVersionParameter"
+            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/apiVersionParameter"
           },
           {
             "name": "$expand",
@@ -199,10 +199,10 @@
         ],
         "parameters": [
           {
-            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/SubscriptionIdParameter"
+            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/subscriptionIdParameter"
           },
           {
-            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/ApiVersionParameter"
+            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/apiVersionParameter"
           },
           {
             "name": "$skipToken",
@@ -260,10 +260,10 @@
         ],
         "parameters": [
           {
-            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/SubscriptionIdParameter"
+            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/subscriptionIdParameter"
           },
           {
-            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/ApiVersionParameter"
+            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/apiVersionParameter"
           },
           {
             "name": "$skipToken",
@@ -300,7 +300,7 @@
     "/subscriptions/{subscriptionId}/providers/Microsoft.EdgeOrder/orders": {
       "get": {
         "tags": [
-          "Orders"
+          "Order"
         ],
         "description": "Lists order at subscription level.",
         "operationId": "ListOrderAtSubscriptionLevel",
@@ -312,10 +312,10 @@
         ],
         "parameters": [
           {
-            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/SubscriptionIdParameter"
+            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/subscriptionIdParameter"
           },
           {
-            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/ApiVersionParameter"
+            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/apiVersionParameter"
           },
           {
             "name": "$skipToken",
@@ -343,8 +343,8 @@
           "nextLinkName": "nextLink"
         },
         "x-ms-examples": {
-          "ListOrderAtSubscriptionLevel": {
-            "$ref": "./examples/ListOrderAtSubscriptionLevel.json"
+          "ListOrderCollectionsAtSubscriptionLevel": {
+            "$ref": "./examples/OrderCollectionListAtSubscriptionLevel.json"
           }
         }
       }
@@ -364,10 +364,10 @@
         ],
         "parameters": [
           {
-            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/SubscriptionIdParameter"
+            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/subscriptionIdParameter"
           },
           {
-            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/ApiVersionParameter"
+            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/apiVersionParameter"
           },
           {
             "name": "$filter",
@@ -402,8 +402,8 @@
           "nextLinkName": "nextLink"
         },
         "x-ms-examples": {
-          "ListOrderItemsAtSubscriptionLevel": {
-            "$ref": "./examples/OrderItemGetBySubscription.json"
+          "ListOrdersAtSubscriptionLevel": {
+            "$ref": "./examples/OrderGetBySubscription.json"
           }
         }
       }
@@ -423,13 +423,13 @@
         ],
         "parameters": [
           {
-            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/SubscriptionIdParameter"
+            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/subscriptionIdParameter"
           },
           {
-            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/ResourceGroupNameParameter"
+            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/resourceGroupNameParameter"
           },
           {
-            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/ApiVersionParameter"
+            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/apiVersionParameter"
           },
           {
             "name": "$filter",
@@ -488,13 +488,13 @@
             "$ref": "#/parameters/addressNameParameter"
           },
           {
-            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/SubscriptionIdParameter"
+            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/subscriptionIdParameter"
           },
           {
-            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/ResourceGroupNameParameter"
+            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/resourceGroupNameParameter"
           },
           {
-            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/ApiVersionParameter"
+            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/apiVersionParameter"
           }
         ],
         "responses": {
@@ -534,13 +534,13 @@
             "$ref": "#/parameters/addressNameParameter"
           },
           {
-            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/SubscriptionIdParameter"
+            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/subscriptionIdParameter"
           },
           {
-            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/ResourceGroupNameParameter"
+            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/resourceGroupNameParameter"
           },
           {
-            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/ApiVersionParameter"
+            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/apiVersionParameter"
           },
           {
             "name": "addressResource",
@@ -593,13 +593,13 @@
             "$ref": "#/parameters/addressNameParameter"
           },
           {
-            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/SubscriptionIdParameter"
+            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/subscriptionIdParameter"
           },
           {
-            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/ResourceGroupNameParameter"
+            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/resourceGroupNameParameter"
           },
           {
-            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/ApiVersionParameter"
+            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/apiVersionParameter"
           }
         ],
         "responses": {
@@ -643,13 +643,13 @@
             "$ref": "#/parameters/addressNameParameter"
           },
           {
-            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/SubscriptionIdParameter"
+            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/subscriptionIdParameter"
           },
           {
-            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/ResourceGroupNameParameter"
+            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/resourceGroupNameParameter"
           },
           {
-            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/ApiVersionParameter"
+            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/apiVersionParameter"
           },
           {
             "name": "If-Match",
@@ -696,7 +696,7 @@
     "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.EdgeOrder/orders": {
       "get": {
         "tags": [
-          "Orders"
+          "Order"
         ],
         "description": "Lists order at resource group level.",
         "operationId": "ListOrderAtResourceGroupLevel",
@@ -708,13 +708,13 @@
         ],
         "parameters": [
           {
-            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/SubscriptionIdParameter"
+            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/subscriptionIdParameter"
           },
           {
-            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/ResourceGroupNameParameter"
+            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/resourceGroupNameParameter"
           },
           {
-            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/ApiVersionParameter"
+            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/apiVersionParameter"
           },
           {
             "name": "$skipToken",
@@ -742,8 +742,8 @@
           "nextLinkName": "nextLink"
         },
         "x-ms-examples": {
-          "ListOrderAtResourceGroupLevel": {
-            "$ref": "./examples/ListOrderAtResourceGroupLevel.json"
+          "ListOrderCollectionsAtResourceGroupLevel": {
+            "$ref": "./examples/OrderCollectionListAtRGLevel.json"
           }
         }
       }
@@ -751,7 +751,7 @@
     "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.EdgeOrder/locations/{location}/orders/{orderName}": {
       "get": {
         "tags": [
-          "Orders"
+          "Order"
         ],
         "description": "Gets an order.",
         "operationId": "GetOrderByName",
@@ -766,16 +766,16 @@
             "$ref": "#/parameters/orderNameParameter"
           },
           {
-            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/SubscriptionIdParameter"
+            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/subscriptionIdParameter"
           },
           {
-            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/ResourceGroupNameParameter"
+            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/resourceGroupNameParameter"
           },
           {
-            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/LocationParameter"
+            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/locationParameter"
           },
           {
-            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/ApiVersionParameter"
+            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/apiVersionParameter"
           }
         ],
         "responses": {
@@ -794,7 +794,7 @@
         },
         "x-ms-examples": {
           "GetOrderByName": {
-            "$ref": "./examples/GetOrderByName.json"
+            "$ref": "./examples/OrderCollectionGet.json"
           }
         }
       }
@@ -814,13 +814,13 @@
         ],
         "parameters": [
           {
-            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/SubscriptionIdParameter"
+            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/subscriptionIdParameter"
           },
           {
-            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/ResourceGroupNameParameter"
+            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/resourceGroupNameParameter"
           },
           {
-            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/ApiVersionParameter"
+            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/apiVersionParameter"
           },
           {
             "name": "$filter",
@@ -856,7 +856,7 @@
         },
         "x-ms-examples": {
           "ListOrderItemsAtResourceGroupLevel": {
-            "$ref": "./examples/OrderItemGetByRG.json"
+            "$ref": "./examples/OrderGetByRG.json"
           }
         }
       }
@@ -876,16 +876,16 @@
         ],
         "parameters": [
           {
-            "$ref": "#/parameters/orderItemNameParameter"
+            "$ref": "#/parameters/orderNameParameter"
           },
           {
-            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/SubscriptionIdParameter"
+            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/subscriptionIdParameter"
           },
           {
-            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/ResourceGroupNameParameter"
+            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/resourceGroupNameParameter"
           },
           {
-            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/ApiVersionParameter"
+            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/apiVersionParameter"
           }
         ],
         "responses": {
@@ -904,7 +904,7 @@
         },
         "x-ms-examples": {
           "GetOrderItemByName": {
-            "$ref": "./examples/OrderItemGet.json"
+            "$ref": "./examples/OrderGet.json"
           }
         }
       },
@@ -912,7 +912,7 @@
         "tags": [
           "OrderItems"
         ],
-        "description": "Creates an order item. Existing order item cannot be updated with this api and should instead be updated with the Update order item API.",
+        "description": "Creates an order item. Existing order itemcannot be updated with this api and should instead be updated with the Update order item API.",
         "operationId": "CreateOrderItem",
         "consumes": [
           "application/json"
@@ -925,13 +925,13 @@
             "$ref": "#/parameters/orderItemNameParameter"
           },
           {
-            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/SubscriptionIdParameter"
+            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/subscriptionIdParameter"
           },
           {
-            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/ResourceGroupNameParameter"
+            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/resourceGroupNameParameter"
           },
           {
-            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/ApiVersionParameter"
+            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/apiVersionParameter"
           },
           {
             "name": "orderItemResource",
@@ -963,7 +963,7 @@
         "x-ms-long-running-operation": true,
         "x-ms-examples": {
           "CreateOrderItem": {
-            "$ref": "./examples/OrderItemCreate.json"
+            "$ref": "./examples/OrderCreate.json"
           }
         }
       },
@@ -984,13 +984,13 @@
             "$ref": "#/parameters/orderItemNameParameter"
           },
           {
-            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/SubscriptionIdParameter"
+            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/subscriptionIdParameter"
           },
           {
-            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/ResourceGroupNameParameter"
+            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/resourceGroupNameParameter"
           },
           {
-            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/ApiVersionParameter"
+            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/apiVersionParameter"
           }
         ],
         "responses": {
@@ -1013,7 +1013,7 @@
         "x-ms-long-running-operation": true,
         "x-ms-examples": {
           "DeleteOrderItemByName": {
-            "$ref": "./examples/OrderItemDelete.json"
+            "$ref": "./examples/OrderDelete.json"
           }
         }
       },
@@ -1034,13 +1034,13 @@
             "$ref": "#/parameters/orderItemNameParameter"
           },
           {
-            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/SubscriptionIdParameter"
+            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/subscriptionIdParameter"
           },
           {
-            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/ResourceGroupNameParameter"
+            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/resourceGroupNameParameter"
           },
           {
-            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/ApiVersionParameter"
+            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/apiVersionParameter"
           },
           {
             "name": "If-Match",
@@ -1079,7 +1079,7 @@
         "x-ms-long-running-operation": true,
         "x-ms-examples": {
           "UpdateOrderItem": {
-            "$ref": "./examples/OrderItemUpdate.json"
+            "$ref": "./examples/OrderUpdate.json"
           }
         }
       }
@@ -1099,16 +1099,16 @@
         ],
         "parameters": [
           {
-            "$ref": "#/parameters/orderItemNameParameter"
+            "$ref": "#/parameters/orderNameParameter"
           },
           {
-            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/SubscriptionIdParameter"
+            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/subscriptionIdParameter"
           },
           {
-            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/ResourceGroupNameParameter"
+            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/resourceGroupNameParameter"
           },
           {
-            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/ApiVersionParameter"
+            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/apiVersionParameter"
           },
           {
             "name": "cancellationReason",
@@ -1136,7 +1136,7 @@
         },
         "x-ms-examples": {
           "CancelOrderItem": {
-            "$ref": "./examples/OrderItemCancel.json"
+            "$ref": "./examples/OrderCancel.json"
           }
         }
       }
@@ -1156,16 +1156,16 @@
         ],
         "parameters": [
           {
-            "$ref": "#/parameters/orderItemNameParameter"
+            "$ref": "#/parameters/orderNameParameter"
           },
           {
-            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/SubscriptionIdParameter"
+            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/subscriptionIdParameter"
           },
           {
-            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/ResourceGroupNameParameter"
+            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/resourceGroupNameParameter"
           },
           {
-            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/ApiVersionParameter"
+            "$ref": "../../../../../common-types/resource-management/v2/types.json#/parameters/apiVersionParameter"
           },
           {
             "name": "returnOrderItemDetails",
@@ -1194,7 +1194,7 @@
         "x-ms-long-running-operation": true,
         "x-ms-examples": {
           "ReturnOrderItem": {
-            "$ref": "./examples/OrderItemReturn.json"
+            "$ref": "./examples/OrderReturn.json"
           }
         }
       }
@@ -1265,7 +1265,7 @@
           "x-ms-client-flatten": true
         },
         "systemData": {
-          "$ref": "../../../../../common-types/resource-management/v2/types.json#/definitions/systemData",
+          "$ref": "../../../../../common-types/resource-management/v2/types.json#/definitions/SystemData",
           "description": "Represents resource creation and update time",
           "readOnly": true
         }
@@ -1332,7 +1332,9 @@
             "Available",
             "ComingSoon",
             "Preview",
-            "Deprecated"
+            "Deprecated",
+            "Signup",
+            "Unavailable"
           ],
           "type": "string",
           "readOnly": true,
@@ -1355,6 +1357,14 @@
               {
                 "value": "Deprecated",
                 "description": "Product is deprecated."
+              },
+              {
+                "value": "Signup",
+                "description": "Product is available only on signup."
+              },
+              {
+                "value": "Unavailable",
+                "description": "Product is not available."
               }
             ]
           }
@@ -1764,13 +1774,9 @@
           "type": "string",
           "readOnly": true
         },
-        "deviceHistory": {
-          "description": "Device history",
-          "uniqueItems": false,
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
+        "managementResourceId": {
+          "description": "Management Resource Id",
+          "type": "string",
           "readOnly": true
         }
       }
@@ -1958,15 +1964,12 @@
         }
       }
     },
-    "ManagementResourceDetails": {
-      "description": "Management resource details to link device",
+    "ManagementResourcePreferences": {
+      "description": "Management resource preference to link device",
       "type": "object",
-      "required": [
-        "managementResourceArmId"
-      ],
       "properties": {
-        "managementResourceArmId": {
-          "description": "Management resource ARM ID",
+        "preferedManagementResourceId": {
+          "description": "Customer prefered Management resource ARM ID",
           "type": "string"
         }
       }
@@ -2028,7 +2031,7 @@
           }
         }
       },
-      "x-ms-discriminator-value": "billingType"
+      "discriminator": "billingType"
     },
     "NotificationPreference": {
       "description": "Notification preference for a job stage.",
@@ -2104,7 +2107,7 @@
           "description": "Order current status.",
           "readOnly": true
         },
-        "orderStageHistory": {
+        "OrderStageHistory": {
           "description": "Order status history.",
           "uniqueItems": false,
           "type": "array",
@@ -2130,10 +2133,11 @@
         "properties": {
           "$ref": "#/definitions/OrderProperties",
           "description": "Order properties",
+          "readOnly": true,
           "x-ms-client-flatten": true
         },
         "systemData": {
-          "$ref": "../../../../../common-types/resource-management/v2/types.json#/definitions/systemData",
+          "$ref": "../../../../../common-types/resource-management/v2/types.json#/definitions/SystemData",
           "description": "Represents resource creation and update time",
           "readOnly": true
         }
@@ -2234,7 +2238,7 @@
           "readOnly": true
         },
         "cancellationStatus": {
-          "description": "Describes whether the order is cancellable or not.",
+          "description": "Describes whether the order item is cancellable or not.",
           "enum": [
             "Cancellable",
             "CancellableWithFee",
@@ -2262,7 +2266,7 @@
           }
         },
         "deletionStatus": {
-          "description": "Describes whether the order item is deletable or not.",
+          "description": "Describes whether the orderItem is deletable or not.",
           "enum": [
             "Allowed",
             "NotAllowed"
@@ -2322,10 +2326,6 @@
           "description": "parent RP details",
           "readOnly": true
         },
-        "managementResourceDetails": {
-          "$ref": "#/definitions/ManagementResourceDetails",
-          "description": "Management resource details"
-        },
         "error": {
           "$ref": "../../../../../common-types/resource-management/v2/types.json#/definitions/ErrorDetail",
           "description": "Top level error for the job.",
@@ -2342,7 +2342,7 @@
       ],
       "type": "object",
       "properties": {
-        "orderItemDetails": {
+        "OrderItemDetails": {
           "$ref": "#/definitions/OrderItemDetails",
           "description": "Represents order item details."
         },
@@ -2380,7 +2380,7 @@
           "x-ms-client-flatten": true
         },
         "systemData": {
-          "$ref": "../../../../../common-types/resource-management/v2/types.json#/definitions/systemData",
+          "$ref": "../../../../../common-types/resource-management/v2/types.json#/definitions/SystemData",
           "description": "Represents resource creation and update time",
           "readOnly": true
         }
@@ -2604,7 +2604,7 @@
           "description": "Customer preference."
         },
         "notificationEmailList": {
-          "description": "Customer preference.",
+          "description": "Additional notification email list.",
           "uniqueItems": false,
           "type": "array",
           "items": {
@@ -2649,6 +2649,10 @@
         "encryptionPreferences": {
           "$ref": "#/definitions/EncryptionPreferences",
           "description": "Preferences related to the Encryption."
+        },
+        "managementResourcePreferences": {
+          "$ref": "#/definitions/ManagementResourcePreferences",
+          "description": "Preferences related to the Management resource."
         }
       }
     },
