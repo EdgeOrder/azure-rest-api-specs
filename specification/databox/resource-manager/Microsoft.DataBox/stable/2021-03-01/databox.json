@@ -994,7 +994,7 @@
           "readOnly": true,
           "x-ms-enum": {
             "name": "DataAccountType",
-            "modelAsExtensible": true,
+            "modelAsString": true,
             "values": [
               {
                 "value": "StorageAccount",
@@ -1458,7 +1458,7 @@
           "readOnly": true,
           "x-ms-enum": {
             "name": "DataAccountType",
-            "modelAsExtensible": true,
+            "modelAsString": true,
             "values": [
               {
                 "value": "StorageAccount",
@@ -1660,7 +1660,7 @@
           "type": "string",
           "x-ms-enum": {
             "name": "DataAccountType",
-            "modelAsExtensible": true,
+            "modelAsString": true,
             "values": [
               {
                 "value": "StorageAccount",
@@ -4373,7 +4373,7 @@
           "type": "string",
           "x-ms-enum": {
             "name": "DataAccountType",
-            "modelAsExtensible": true,
+            "modelAsString": true,
             "values": [
               {
                 "value": "StorageAccount",
@@ -4464,7 +4464,7 @@
           "type": "string",
           "x-ms-enum": {
             "name": "DataAccountType",
-            "modelAsExtensible": true,
+            "modelAsString": true,
             "values": [
               {
                 "value": "StorageAccount",
