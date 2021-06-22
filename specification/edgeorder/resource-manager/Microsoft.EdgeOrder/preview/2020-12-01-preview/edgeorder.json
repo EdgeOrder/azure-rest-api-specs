@@ -2070,8 +2070,8 @@
       "description": "Management resource preference to link device",
       "type": "object",
       "properties": {
-        "preferedManagementResourceId": {
-          "description": "Customer prefered Management resource ARM ID",
+        "preferredManagementResourceId": {
+          "description": "Customer preferred Management resource ARM ID",
           "type": "string"
         }
       }
