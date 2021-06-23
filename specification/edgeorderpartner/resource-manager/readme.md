@@ -25,7 +25,8 @@ To see additional help and options, run:
 These are the global settings for the EdgeOrderPartner API.
 
 ``` yaml
-title: Edge Order Partner API's
+title: EdgeOrderPartnerManagementClient
+description: Edge Order Partner API's
 openapi-type: arm
 tag: package-2020-12-preview
 ```
